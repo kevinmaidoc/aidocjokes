@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bad Aidoc Dad jokes</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            font-family: "Comic Sans MS", cursive;
+        }
+
+        .button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 18px;
+            border-radius: 4px;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 200px;
+        }
+
+        .button1 {
+            background-color: hotpink;
+        }
+
+        .button2 {
+            background-color: orange;
+        }
+
+        .button3 {
+            background-color: limegreen;
+        }
+
+        /* Mobile Responsive Styles */
+        @media only screen and (max-width: 600px) {
+            body {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-family: 'Comic Sans MS', cursive;">Bad Aidoc Dad jokes</h1>
+    <h2 style="font-family: 'Comic Sans MS', cursive;">VOLUME UP!</h2>
+
+    <button class="button button1" onclick="playSound('https://www.freesoundslibrary.com/wp-content/uploads/2018/01/crowd-laughing-and-applauding-sound-effect.mp3')">Funny!</button>
+    <button class="button button2" onclick="playSound('https://www.mediacollege.com/downloads/sound-effects/audience/boohiss-01.wav')">Boo!</button>
+    <button class="button button3" onclick="playSound('https://soundspunos.com/uploads/files/2022-12/1670236383_1614319855_ba_dum_-_tss.mp3')">Bu Dum Tss</button>
+
+    <script>
+        function playSound(soundFile) {
+            var audio = new Audio(soundFile);
+            audio.play();
+        }
+    </script>
+</body>
+</html>
