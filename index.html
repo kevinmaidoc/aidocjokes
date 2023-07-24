@@ -1,8 +1,8 @@
-
 <!DOCTYPE html>
 <html>
 <head>
     <title>Bad Aidoc Dad jokes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             display: flex;
@@ -12,7 +12,7 @@
             height: 100vh;
             background-color: black;
             color: white;
-            font-family: "Comic Sans MS", cursive;
+            font-family: "Indie Flower", cursive;
         }
 
         .button {
@@ -38,17 +38,20 @@
             background-color: limegreen;
         }
 
-        /* Mobile Responsive Styles 
+        /* Mobile Responsive Styles */
         @media only screen and (max-width: 600px) {
-            body {
-                flex-direction: column;*/
+            .button {
+                font-size: 16px; /* Adjust font size for mobile */
+                width: 150px; /* Adjust button width for mobile */
             }
         }
     </style>
+    <!-- Add the Google Fonts link for Indie Flower -->
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1 style="font-family: 'Comic Sans MS', cursive;">Bad Aidoc Dad jokes</h1>
-    <h2 style="font-family: 'Comic Sans MS', cursive;">VOLUME UP!</h2>
+    <h1>Bad Aidoc Dad jokes</h1>
+    <h2>VOLUME UP!</h2>
 
     <button class="button button1" onclick="playSound('https://www.freesoundslibrary.com/wp-content/uploads/2018/01/crowd-laughing-and-applauding-sound-effect.mp3')">Funny!</button>
     <button class="button button2" onclick="playSound('https://www.mediacollege.com/downloads/sound-effects/audience/boohiss-01.wav')">Boo!</button>
